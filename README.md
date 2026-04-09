@@ -200,6 +200,7 @@ As the Documentation Lead, I was responsible for preparing, organizing, and main
 Responsibilities
 
 Prepared and maintained project documentation including:
+
 Literature Review
 Problem Statement
 System Design
@@ -220,6 +221,26 @@ Problem Statement
 Proposed System
 Results
 Ensured clarity and consistency in all documents for easy understanding
+Designed and maintained standard document templates for consistency (report, PPT, tables)
+Ensured proper formatting, headings, numbering, and alignment as per academic guidelines
+Prepared flowcharts, block diagrams, and system architecture descriptions
+Documented data preprocessing steps (handling missing values, encoding, normalization)
+Explained model training process step-by-step in simple terms
+Created tables and charts for:
+Accuracy comparison
+Model performance
+Dataset features
+Documented evaluation metrics such as:
+Accuracy
+Precision
+Recall
+F1-score
+Maintained daily internship / project journal entries
+Organized reference links and citations for all research papers
+Ensured proper plagiarism-free content writing
+Coordinated with team members to collect technical updates and progress reports
+Updated documentation based on feedback from guide/mentor
+Maintained backup of all documents and versions
 
 Key Contributions
 
@@ -228,6 +249,13 @@ Identified research gaps and helped define the project problem
 Structured the final project report professionally
 Prepared presentation-ready content for seminar and viva
 Simplified complex technical concepts into easy explanations
+Converted complex ML concepts into easy-to-understand explanations for presentation
+Prepared comparison between algorithms (Random Forest vs XGBoost etc.)
+Created gap analysis and problem justification for project approval
+Helped align project implementation with research papers
+Supported debugging documentation (noting errors and solutions)
+Documented API endpoints and system flow (frontend ↔ backend)
+Contributed to final result analysis and interpretation
 
 Skills Used
 
@@ -237,3 +265,10 @@ Documentation & Reporting
 MS Word / LaTeX / PPT
 Data Interpretation
 Communication Skills
+Analytical Thinking
+Attention to Detail
+Structured Writing
+Research Interpretation
+Data Presentation Skills
+Technical Simplification
+Time Management
