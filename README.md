@@ -164,3 +164,32 @@ Integrated the trained model with the Flask backend
 Generated prediction results based on user input data
 Assisted in debugging and improving model efficiency
 Documented the machine learning workflow and results   
+
+Literature Survey & Analysis
+
+As part of this project, I conducted a comprehensive literature survey for both the Student Performance Prediction System and the Course Recommendation System.
+
+Objectives
+Understand existing research and methodologies in student performance prediction
+Analyze recommendation techniques used in course recommendation systems
+Identify gaps and limitations in current approaches
+Work Done
+Reviewed research papers, journals, and online resources on:
+Student performance prediction using Machine Learning
+Course recommendation systems based on user behavior and academic data
+Studied key algorithms:
+Regression Models
+Classification Techniques
+Collaborative Filtering
+Content-Based Recommendation
+Compared models based on:
+Accuracy
+Efficiency
+Scalability
+Key Insights
+Models like Decision Trees, Random Forest, and Linear Regression are widely used for prediction
+Recommendation systems improve personalized learning paths
+Data quality and feature selection significantly impact model performance
+Outcome
+Identified suitable approaches for building an efficient prediction and recommendation system
+Established a strong foundation for model selection, feature engineering, and system design
