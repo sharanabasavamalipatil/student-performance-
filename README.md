@@ -47,3 +47,17 @@ Tested API responses using sample input data
 Debugged prediction errors and improved model efficiency
 Supported development of course recommendation logic
 Worked on improving prediction reliability for real-time usage
+
+4.Role:Research Analyst
+As a Research Analyst, responsible for studying existing student performance prediction systems and identifying suitable machine learning techniques. Conducted research on datasets, algorithms, and system requirements to support project development and improve decision-making.
+
+Technical Summary
+Conducted literature review on student performance prediction systems
+Studied different machine learning algorithms suitable for classification tasks
+Analyzed suitability of Random Forest for predictive modeling
+Identified important academic features affecting student performance
+Collected and analyzed publicly available student datasets
+Compared performance of different prediction approaches
+Provided research inputs for selecting appropriate tools and frameworks
+Documented research findings and supported system design decisions
+Assisted in identifying future enhancement opportunities
