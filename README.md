@@ -129,3 +129,21 @@ Click  Mic Button to speak your question
 Claude AI processes & responds
 Toggle Voice On to hear responses (speech synthesis)
 Requires Google Chrome or Microsoft Edge browser
+
+
+
+Role: Project Lead / Team Lead
+
+As the Project Lead, I was responsible for planning, coordinating, and supervising the overall development of the Student Performance Prediction and Course Recommendation System. I ensured smooth collaboration among team members and maintained progress according to project timelines.
+
+Responsibilities
+Led the overall project planning and task distribution among team members
+Designed the project workflow and system architecture
+Coordinated frontend and backend integration
+Supervised development of the Random Forest machine learning model
+Managed backend development using Flask
+Reviewed code and ensured proper implementation of features
+Identified and resolved technical issues during development
+Monitored project progress and ensured timely completion
+Ensured proper documentation and repository management on GitHub
+Guided team members in debugging and improving code quality
