@@ -12,7 +12,7 @@ Assisted in debugging dependency and configuration issues
 Maintained repository structure and version control using GitHub
 Monitored development milestones and ensured alignment with project goals
 
-As AI/ML Engineer–1, responsible for preparing and preprocessing the dataset and developing the initial machine learning model for student performance prediction. Focused on building the core prediction logic using the Random Forest algorithm and ensuring proper data handling for model training.
+ 2. As AI/ML Engineer–1, responsible for preparing and preprocessing the dataset and developing the initial machine learning model for student performance prediction. Focused on building the core prediction logic using the Random Forest algorithm and ensuring proper data handling for model training.
 
 Collected and organized student academic dataset
 Performed data preprocessing including:
