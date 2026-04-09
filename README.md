@@ -193,3 +193,47 @@ Data quality and feature selection significantly impact model performance
 Outcome
 Identified suitable approaches for building an efficient prediction and recommendation system
 Established a strong foundation for model selection, feature engineering, and system design
+
+
+As the Documentation Lead, I was responsible for preparing, organizing, and maintaining all project-related documents for the Student Performance Prediction and Personalized Course Recommendation System. I ensured that all technical and non-technical aspects of the project were clearly documented and aligned with project requirements.
+
+Responsibilities
+
+Prepared and maintained project documentation including:
+Literature Review
+Problem Statement
+System Design
+Methodology
+Results and Analysis
+Collected and structured information from research papers and technical resources for the literature survey
+Created Research Paper Summary Tables, Technology Analysis, and Gap Analysis
+Documented machine learning models used in the project such as:
+Random Forest
+XGBoost
+Logistic Regression
+Prepared system architecture diagrams and workflow explanations
+Assisted in writing project report (VTU format) and ensured proper formatting
+Maintained proper version control documentation using GitHub
+Created PPT content for presentation, including:
+Literature Survey
+Problem Statement
+Proposed System
+Results
+Ensured clarity and consistency in all documents for easy understanding
+
+Key Contributions
+
+Developed a complete literature review section by analyzing multiple research papers
+Identified research gaps and helped define the project problem
+Structured the final project report professionally
+Prepared presentation-ready content for seminar and viva
+Simplified complex technical concepts into easy explanations
+
+Skills Used
+
+Technical Writing
+Research Analysis
+Documentation & Reporting
+MS Word / LaTeX / PPT
+Data Interpretation
+Communication Skills
