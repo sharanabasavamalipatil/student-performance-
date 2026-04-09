@@ -48,7 +48,7 @@ Debugged prediction errors and improved model efficiency
 Supported development of course recommendation logic
 Worked on improving prediction reliability for real-time usage
 
-4.Role:Research Analyst
+4.Role:Research Analyst---
 As a Research Analyst, responsible for studying existing student performance prediction systems and identifying suitable machine learning techniques. Conducted research on datasets, algorithms, and system requirements to support project development and improve decision-making.
 
 Technical Summary
