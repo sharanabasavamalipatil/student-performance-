@@ -27,3 +27,23 @@ Performed initial model training
 Generated preliminary prediction outputs
 Shared processed dataset and trained model with backend team
 Assisted in improving model accuracy through feature refinement
+
+3.Role: AI/ML Engineer – 2 (Model Evaluation & Integration Support)
+
+
+As AI/ML Engineer–2, responsible for evaluating model performance, optimizing prediction accuracy, and supporting integration of the machine learning model with backend APIs. Focused on improving model reliability and supporting development of advanced features.
+
+Technical 
+Evaluated model performance using:
+Accuracy Score
+Precision and Recall
+F1-score
+Generated classification reports to analyze prediction results
+Performed hyperparameter tuning to improve model performance
+Validated model predictions using test datasets
+Saved trained model using Pickle/Joblib for backend integration
+Assisted in integrating trained model into Flask backend APIs
+Tested API responses using sample input data
+Debugged prediction errors and improved model efficiency
+Supported development of course recommendation logic
+Worked on improving prediction reliability for real-time usage
