@@ -147,3 +147,19 @@ Identified and resolved technical issues during development
 Monitored project progress and ensured timely completion
 Ensured proper documentation and repository management on GitHub
 Guided team members in debugging and improving code quality
+AIML Engineer Role
+
+As an AI/ML Engineer, I was responsible for designing, developing, and implementing the machine learning components of the Student Performance Prediction and Course Recommendation System. I worked on data preprocessing, model training, testing, and integration of the machine learning model with the backend to generate accurate predictions and recommendations.
+
+Responsibilities
+Collected and analyzed student academic data for model development
+Performed data preprocessing such as handling missing values and formatting datasets
+Selected important features influencing student performance
+Implemented the Random Forest algorithm for performance prediction
+Trained and tested the machine learning model using real dataset samples
+Evaluated model accuracy using performance metrics
+Improved model performance through parameter tuning
+Integrated the trained model with the Flask backend
+Generated prediction results based on user input data
+Assisted in debugging and improving model efficiency
+Documented the machine learning workflow and results
