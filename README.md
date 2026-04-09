@@ -146,7 +146,8 @@ Reviewed code and ensured proper implementation of features
 Identified and resolved technical issues during development
 Monitored project progress and ensured timely completion
 Ensured proper documentation and repository management on GitHub
-Guided team members in debugging and improving code quality
+Guided team members in debugging and improving code quality    
+
 AIML Engineer Role
 
 As an AI/ML Engineer, I was responsible for designing, developing, and implementing the machine learning components of the Student Performance Prediction and Course Recommendation System. I worked on data preprocessing, model training, testing, and integration of the machine learning model with the backend to generate accurate predictions and recommendations.
