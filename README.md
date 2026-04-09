@@ -1,1 +1,131 @@
 # student-performance-
+A full-stack educational analytics platform powered by machine learning and AI, designed to predict student performance, recommend personalized learning paths, and enable real-time teacher-student engagement.
+EduPredict v2 is a comprehensive educational intelligence system built for institutions seeking data-driven insights into student academic performance. The platform leverages 4 ensemble machine learning models to predict student dropout risk, course performance, and learning gaps, while integrating Claude AI for intelligent tutoring and personalized course recommendations. Teachers gain real-time analytics and intervention tools, while students receive AI-powered guidance, gamified learning through a points system, and digital certificates upon course completion.
+
+Outcomes & Impact
+* ML Prediction Accuracy — 4 trained models (Random Forest, Gradient Boosting, MLP, Logistic Regression) trained on 2,000+ engineering student records
+* Real-time Intervention — Teachers identify at-risk students instantly and award motivational points
+* Personalized Learning Paths — AI recommends skill development courses based on student gaps
+* Gamification — Points system drives engagement with tier progression (Bronze → Silver → Gold → Platinum)
+* Digital Credentials — Auto-generated PDF certificates awarded upon course completion
+* Voice-Enabled Tutoring — Claude AI with speech-to-text & text-to-speech (Chrome browser)
+* Scalable Architecture — Dockerized backend & frontend, Kubernetes-ready deployment
+
+Technology Stack
+Backend
+
+Framework: FastAPI 0.111.0 (async Python web server)
+Auth: JWT-based authentication with demo user database
+ML Libraries: scikit-learn 1.5.2, NumPy 1.26.4, Pandas 2.2.3
+Models: Pre-trained Random Forest, Gradient Boosting, MLP, Logistic Regression (pickled)
+AI Integration: Anthropic Claude API (optional — for intelligent chat)
+PDF Generation: ReportLab 4.2.2 (certificate generation)
+Async Client: HTTPX 0.27.0
+Server: Uvicorn with hot reload
+Database: In-memory stores (can be upgraded to PostgreSQL)
+
+Frontend
+
+Framework: Next.js 14.2.5 (React 18.3.1 with TypeScript)
+Styling: Tailwind CSS 3.4.6 with PostCSS
+UI Components: Material-UI (MUI) 5.16.5 + Emotion
+Charts: Recharts 2.12.7 & Chart.js 4.4.3
+State Management: Zustand 4.5.4
+Forms: React Hook Form 7.52.1 + Zod validation
+Animations: Framer Motion 11.3.8
+Notifications: React Hot Toast 2.4.1
+HTTP Client: Axios 1.7.2
+
+Key Features
+1. ML-Powered Student Performance Prediction
+
+Ensemble of 4 machine learning models predict student risk levels
+Inputs: CGPA, attendance, internship, projects, study hours, Sleep Quality, Physical Activity
+Output: Risk Classification (Excellent → At Risk)
+Real-time probability scores for intervention planning
+
+2. Intelligent Course Recommendation Engine
+
+Analyzes student skill gaps and academic history
+Recommends personalized course pathways
+Tracks course completion and auto-awards certificates
+25 points bonus per completed course
+
+3. AI-Powered Chat Assistant
+
+Claude API integration for 24/7 tutoring
+Voice input ( speak questions) — requires Chrome/Edge
+Voice output ( hear responses)
+Context-aware replies using student dataset
+Chat history persistence
+
+4. Teacher Analytics Dashboard
+
+At-risk student identification with color-coded severity levels
+Class-wide performance analytics (graphs & charts)
+Student roster management with filterable data
+Points allocation interface with 12 predefined activity categories
+
+5. Gamification & Points System
+
+Teacher awards points for: hackathons, projects, certifications, internships, quizzes, workshops, etc.
+Students earn tiers: Bronze (0-100) → Silver (100-250) → Gold (250-500) → Platinum (500+)
+Visual progress tracking & leaderboard ranking
+Real-time WebSocket notifications
+
+6. Digital Certificate Generation
+
+Auto-generated PDF certificates on course completion
+Student metadata + course details embedded
+Downloadable as PDF file
+ATS-compliant design
+
+7. Role-Based Access Control
+
+Student Portal: Dashboard, performance predictor, course enrollment, AI chat, certificate download, leaderboard
+Teacher Portal: Class analytics, at-risk student alerts, student roster, points management, real-time notifications
+
+8. Real-time Notifications (WebSocket)
+
+Instant alerts when teachers award points
+Push notifications for course completion
+Live leaderboard updates
+
+9. Multi-Model Ensemble Predictions
+
+Random Forest: Robust non-linear patterns
+Gradient Boosting: Sequential error correction
+MLP (Neural Network): Deep pattern recognition
+Logistic Regression: Probabilistic baseline
+
+10. Responsive UI with Modern Design
+
+Mobile-friendly Tailwind CSS design
+Smooth animations (Framer Motion)
+Dark mode support
+Real-time chart updates (Recharts)
+
+
+Data Model
+Student Record (from CSV)
+
+Demographics: ID, Name, Email, Branch, Semester, Graduation Year
+Academics: CGPA, Attendance Rate, GPA Trend
+Performance: Internship Status, Projects Count, Research Papers
+Lifestyle: Sleep Quality, Physical Activity, Social Activities
+Target: Dropout Risk (Yes/No)
+
+Machine Learning Features
+
+13+ numerical features (CGPA, hours studied, sleep quality, etc.)
+Label-encoded categorical features (branch, region)
+StandardScaler normalized (mean=0, std=1)
+
+
+ Voice Assistant Guide
+
+Navigate to Student Dashboard → Chat tab
+Click  Mic Button to speak your question
+Claude AI processes & responds
+Toggle Voice On to hear responses (speech synthesis)
+Requires Google Chrome or Microsoft Edge browser
