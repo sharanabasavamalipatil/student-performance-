@@ -77,3 +77,81 @@ Maintained version updates and documentation consistency
 Prepared reports for project presentations and submissions
 Structured documentation for easy understanding and maintenance
 Supported preparation of technical summaries and project reports
+
+
+
+edupredict-v2-fixed/
+│
+├── README.md
+├── docker-compose.yml
+├── Dockerfile.backend
+├── k8s.yaml
+│
+├── backend/
+│   ├── main.py
+│   ├── preprocessing.py
+│   ├── recommender.py
+│   ├── certificate_gen.py
+│   ├── requirements.txt
+│   ├── .env.example
+│   │
+│   ├── data/
+│   │   └── engineering_students.csv
+│   │
+│   └── models/
+│       └── metadata.json
+│
+├── frontend/
+│   ├── package.json
+│   ├── next.config.js
+│   ├── tailwind.config.js
+│   ├── postcss.config.js
+│   ├── tsconfig.json
+│   ├── Dockerfile
+│   ├── .env.local
+│   ├── .env.local.example
+│   │
+│   └── src/
+│       ├── app/
+│       │   ├── layout.tsx
+│       │   ├── page.tsx
+│       │   ├── globals.css
+│       │
+│       │   ├── login/
+│       │   │   └── page.tsx
+│       │
+│       │   ├── leaderboard/
+│       │   │   └── page.tsx
+│       │
+│       │   ├── student/
+│       │   │   ├── layout.tsx
+│       │   │   ├── page.tsx
+│       │   │   ├── chat/
+│       │   │   │   └── page.tsx
+│       │   │   ├── courses/
+│       │   │   │   └── page.tsx
+│       │   │   ├── points/
+│       │   │   │   └── page.tsx
+│       │   │   └── predictor/
+│       │   │       └── page.tsx
+│       │
+│       │   └── teacher/
+│       │       ├── layout.tsx
+│       │       ├── page.tsx
+│       │       ├── students/
+│       │       │   └── page.tsx
+│       │       ├── analytics/
+│       │       │   └── page.tsx
+│       │       ├── at-risk/
+│       │       │   └── page.tsx
+│       │       └── points/
+│       │           └── page.tsx
+│       │
+│       ├── components/
+│       │   └── Sidebar.tsx
+│       │
+│       ├── lib/
+│       │   └── api.ts
+│       │
+│       └── store/
+│           └── index.ts
