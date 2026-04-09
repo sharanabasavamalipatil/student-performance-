@@ -1,0 +1,56 @@
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@700,800&f[]=satoshi@400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #020617; color: #f1f5f9; font-family: 'Satoshi', sans-serif; -webkit-font-smoothing: antialiased; }
+  ::-webkit-scrollbar { width: 5px; height: 5px; }
+  ::-webkit-scrollbar-track { background: #0f172a; }
+  ::-webkit-scrollbar-thumb { background: #1e293b; border-radius: 3px; }
+}
+
+@layer components {
+  .glass { background: rgba(15,23,42,0.85); backdrop-filter: blur(14px); border: 1px solid rgba(148,163,184,0.1); }
+  .glass-sm { background: rgba(30,41,59,0.7); backdrop-filter: blur(8px); border: 1px solid rgba(148,163,184,0.08); }
+  .card { @apply glass rounded-2xl p-6; }
+  .btn { @apply font-semibold rounded-xl px-5 py-2.5 transition-all duration-200 active:scale-95 cursor-pointer border-0 outline-none; }
+  .btn-primary { @apply btn bg-indigo-500 hover:bg-indigo-600 text-white; box-shadow: 0 0 0 0 rgba(99,102,241,0); }
+  .btn-primary:hover { box-shadow: 0 0 24px rgba(99,102,241,0.3); }
+  .btn-ghost { @apply btn glass-sm hover:bg-slate-700/60 text-slate-300; }
+  .input { @apply w-full bg-slate-900/80 border border-slate-700 rounded-xl px-4 py-3 text-slate-100 placeholder-slate-500 outline-none transition-all duration-200; }
+  .input:focus { @apply border-indigo-500; box-shadow: 0 0 0 3px rgba(99,102,241,0.15); }
+  .badge { @apply inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg text-xs font-bold; }
+  .sidebar-link { @apply flex items-center gap-3 px-4 py-2.5 rounded-xl text-slate-400 hover:text-white hover:bg-slate-800/50 transition-all duration-150 font-medium text-sm cursor-pointer; }
+  .sidebar-active { @apply flex items-center gap-3 px-4 py-2.5 rounded-xl text-white bg-indigo-500/15 border border-indigo-500/25 font-semibold text-sm cursor-pointer; }
+  .table-row { @apply border-b border-slate-800/60 hover:bg-slate-800/25 transition-colors duration-100; }
+  .stat-number { font-family: 'Clash Display', sans-serif; font-weight: 800; }
+  .section-title { font-family: 'Clash Display', sans-serif; font-weight: 700; }
+}
+
+@layer utilities {
+  .text-gradient { background: linear-gradient(135deg, #6366f1, #a78bfa, #38bdf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .text-gradient-green { background: linear-gradient(135deg, #10b981, #34d399); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text; }
+  .bg-mesh { background: radial-gradient(at 20% 20%, rgba(99,102,241,0.08) 0, transparent 50%), radial-gradient(at 80% 10%, rgba(56,189,248,0.06) 0, transparent 50%), radial-gradient(at 5% 80%, rgba(16,185,129,0.05) 0, transparent 50%); }
+  .shimmer { background: linear-gradient(90deg, #1e293b 25%, #334155 50%, #1e293b 75%); background-size: 200% 100%; animation: shimmer 1.5s infinite; }
+  .no-scroll { -ms-overflow-style: none; scrollbar-width: none; }
+  .no-scroll::-webkit-scrollbar { display: none; }
+  .font-display { font-family: 'Clash Display', sans-serif; }
+  .font-mono { font-family: 'JetBrains Mono', monospace; }
+}
+
+@keyframes shimmer { 0% { background-position: -200% 0; } 100% { background-position: 200% 0; } }
+@keyframes fadeUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+@keyframes scaleIn { from { opacity:0; transform:scale(0.96); } to { opacity:1; transform:scale(1); } }
+@keyframes slideRight { from { transform:translateX(-100%); } to { transform:translateX(0); } }
+@keyframes pulse-ring { 0%,100% { box-shadow: 0 0 0 0 rgba(99,102,241,0.4); } 50% { box-shadow: 0 0 0 8px rgba(99,102,241,0); } }
+
+.anim-fade-up { animation: fadeUp 0.4s ease-out both; }
+.anim-scale-in { animation: scaleIn 0.3s ease-out both; }
+.anim-delay-1 { animation-delay: 0.05s; }
+.anim-delay-2 { animation-delay: 0.1s; }
+.anim-delay-3 { animation-delay: 0.15s; }
+.anim-delay-4 { animation-delay: 0.2s; }
+.pulse-ring { animation: pulse-ring 2s ease-in-out infinite; }
