@@ -49,9 +49,10 @@ Supported development of course recommendation logic
 Worked on improving prediction reliability for real-time usage
 
 4.Role:Research Analyst---
+
 As a Research Analyst, responsible for studying existing student performance prediction systems and identifying suitable machine learning techniques. Conducted research on datasets, algorithms, and system requirements to support project development and improve decision-making.
 
-Technical Summary
+Technical :
 Conducted literature review on student performance prediction systems
 Studied different machine learning algorithms suitable for classification tasks
 Analyzed suitability of Random Forest for predictive modeling
@@ -61,3 +62,18 @@ Compared performance of different prediction approaches
 Provided research inputs for selecting appropriate tools and frameworks
 Documented research findings and supported system design decisions
 Assisted in identifying future enhancement opportunities
+
+5.Role : Documentation Lead
+
+As the Documentation Lead, responsible for preparing and maintaining all project-related documentation. Ensured proper recording of development progress, system workflow, and technical details required for project submission and repository maintenance.
+
+Technical :
+Prepared project documentation including system overview and workflow
+Documented requirements, architecture diagrams, and module descriptions
+Maintained README files and project documentation in GitHub repository
+Recorded daily development activities and progress reports
+Created technical documentation for frontend, backend, and ML modules
+Maintained version updates and documentation consistency
+Prepared reports for project presentations and submissions
+Structured documentation for easy understanding and maintenance
+Supported preparation of technical summaries and project reports
