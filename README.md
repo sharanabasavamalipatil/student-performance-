@@ -1,157 +1,290 @@
-# student-performance-
 
-1. Role: Team Lead
-As the Team Lead, responsible for planning and coordinating the development of the Student Performance Prediction and Course Recommendation System. Managed team activities, assigned tasks, monitored project progress, and ensured smooth communication among team members while guiding the development of backend frameworks and advanced features.
-Technical:
-Designed initial system architecture for frontend, backend, and machine learning integration
-Managed project workflow using structured task distribution
-Coordinated development of Flask backend framework
-Supervised integration planning between React frontend and ML modules
-Reviewed code structure and ensured consistency across modules
-Assisted in debugging dependency and configuration issues
-Maintained repository structure and version control using GitHub
-Monitored development milestones and ensured alignment with project goals
+# Student Performance Prediction
 
- 2. As AI/ML Engineer–1, responsible for preparing and preprocessing the dataset and developing the initial machine learning model for student performance prediction. Focused on building the core prediction logic using the Random Forest algorithm and ensuring proper data handling for model training.
+EduPredict is an AI-powered student performance prediction platform that helps educational institutions identify at-risk students early and provide personalized recommendations to improve academic outcomes.
 
-Collected and organized student academic dataset
-Performed data preprocessing including:
-Handling missing values
-Removing duplicates
-Formatting dataset structure
-Conducted exploratory data analysis (EDA) to understand dataset patterns
-Selected important features affecting student performance
-Implemented Random Forest Classifier using Scikit-learn
-Split dataset into training and testing sets using train_test_split
-Performed initial model training
-Generated preliminary prediction outputs
-Shared processed dataset and trained model with backend team
-Assisted in improving model accuracy through feature refinement
+The system uses machine learning models to analyze student data such as attendance, grades, study hours, and participation to predict performance and generate insights for both students and teachers.
 
-3.Role: AI/ML Engineer – 2 (Model Evaluation & Integration Support)
+The platform includes analytics dashboards, course recommendations, certificate generation, and an AI assistant for academic guidance.
 
 
-As AI/ML Engineer–2, responsible for evaluating model performance, optimizing prediction accuracy, and supporting integration of the machine learning model with backend APIs. Focused on improving model reliability and supporting development of advanced features.
+## Features
+ 
+ * Student Performance Prediction
+ * AI-powered academic guidance assistant
+ * Course recommendation system
+ * Early risk detection for students
+ * Points and achievement system
+ * Automatic certificate generation
+ * Student analytics dashboard
+ * Teacher dashboard to monitor student progress
+ * Real-time notifications
+ * Voice-enabled AI chat assistant
+## Tech 
 
-Technical 
-Evaluated model performance using:
-Accuracy Score
-Precision and Recall
-F1-score
-Generated classification reports to analyze prediction results
-Performed hyperparameter tuning to improve model performance
-Validated model predictions using test datasets
-Saved trained model using Pickle/Joblib for backend integration
-Assisted in integrating trained model into Flask backend APIs
-Tested API responses using sample input data
-Debugged prediction errors and improved model efficiency
-Supported development of course recommendation logic
-Worked on improving prediction reliability for real-time usage
+Frontend
 
-4.Role:Research Analyst---
+* React
+* TypeScript
+* Vite
+* Tailwind CSS
 
-As a Research Analyst, responsible for studying existing student performance prediction systems and identifying suitable machine learning techniques. Conducted research on datasets, algorithms, and system requirements to support project development and improve decision-making.
+Backend
 
-Technical :
-Conducted literature review on student performance prediction systems
-Studied different machine learning algorithms suitable for classification tasks
-Analyzed suitability of Random Forest for predictive modeling
-Identified important academic features affecting student performance
-Collected and analyzed publicly available student datasets
-Compared performance of different prediction approaches
-Provided research inputs for selecting appropriate tools and frameworks
-Documented research findings and supported system design decisions
-Assisted in identifying future enhancement opportunities
+* Python
+* FastAPI
+* Uvicorn
 
-5.Role : Documentation Lead
+Machine Learning
 
-As the Documentation Lead, responsible for preparing and maintaining all project-related documentation. Ensured proper recording of development progress, system workflow, and technical details required for project submission and repository maintenance.
+* Scikit-learn
+* Random Forest
+* Gradient Boosting
+* Logistic Regression
+* MLP Neural Network
 
-Technical :
-Prepared project documentation including system overview and workflow
-Documented requirements, architecture diagrams, and module descriptions
-Maintained README files and project documentation in GitHub repository
-Recorded daily development activities and progress reports
-Created technical documentation for frontend, backend, and ML modules
-Maintained version updates and documentation consistency
-Prepared reports for project presentations and submissions
-Structured documentation for easy understanding and maintenance
-Supported preparation of technical summaries and project reports
+Database / Storage
+
+* PostgreSQL
+* Redis (for caching)
+
+DevOps / Deployment
+
+* Docker
+* kubernetes
+* MLflow (experiment tracking)
+
+AI Integration
+
+* Anthropic Claude API (optional AI chat)
+## Installation
+
+* Clone the repository:
+
+  git clone https://github.com/yourusername/edupredict.git
+
+* Navigate to the project folder:
+
+  cd edupredict
+
+* Install backend dependencies:
+
+  cd backend
+  pip install -r requirements.txt
+
+* Install frontend dependencies:
+
+  cd ../frontend
+  npm install
+## Environment Variables
+---
+
+Create a `.env` file inside the **backend folder**.
+
+Example:
+
+```
+ANTHROPIC_API_KEY=your_api_key
+JWT_SECRET=secure_secret_key
+DATABASE_URL=postgresql://user:password@localhost:5432/edupredict
+REDIS_URL=redis://localhost:6379
+```
+
+| Variable          | Description                    |
+| ----------------- | ------------------------------ |
+| ANTHROPIC_API_KEY | API key for Claude AI chatbot  |
+| JWT_SECRET        | Secret key for authentication  |
+| DATABASE_URL      | PostgreSQL database connection |
+| REDIS_URL         | Redis caching service          |
+
+---
+
+   
+## Run Locally
+
+* Run backend:
+
+  cd backend
+  uvicorn main:app --reload
+
+* Backend runs at:
+
+  http://localhost:8000
+
+* API documentation:
+
+  http://localhost:8000/docs
+
+* Run frontend:
+
+  cd frontend
+  npm run dev
+
+* Frontend runs at:
+
+  http://localhost:5173
+
+## Deployment
+
+* Docker Deployment
+  docker-compose up --build
+
+
+* Cloud Platforms
+
+Supported deployment platforms:
+
+* AWS
+* Azure
+* Google Cloud
+* Render
+* Vercel (Frontend)
+## Usage / Examples
+
+workflow:
+
+1. Student logs into the platform.
+2. System collects academic metrics.
+3. ML model predicts student performance.
+4. Dashboard shows performance analytics.
+5. AI assistant provides learning suggestions.
+6. Student enrolls in recommended courses.
+7. Teachers monitor and award points.
+
+Example prediction input:
+
+{
+  "attendance": 75,
+  "study_hours": 4,
+  "assignments_completed": 8,
+  "participation": 3
+}
+
+Example response:
+
+{
+  "prediction": "At Risk",
+  "confidence": 0.84
+}
+## API Reference
+
+* Login
+
+ POST /api/auth/login
+
+* Predict Performance
+
+ POST /api/predict
+
+* AI Chat Assistant
+
+ POST /api/chat
+
+* Course Enrollment
+
+ POST /api/courses/enroll
+
+* Course Completion
+
+ POST /api/courses/complete
+
+* Fetch Certificates
+
+ GET /api/certificates
+
+* Download Certificate
+
+ GET /api/certificates/{id}/download
+
+* Award Student Points
+
+ POST /api/students/{id}/points
+##  Running Tests
+
+* Run backend tests:
+
+  pytest
+
+* Run frontend tests:
+
+  npm test
+## 12. Lessons
+
+* Designing full-stack AI applications
+* Implementing machine learning pipelines
+* Creating scalable REST APIs using FastAPI
+* Building interactive dashboards with React
+* Managing environment variables securely
+* Integrating AI APIs with web systems
+* Deploying applications with Docker 
+##  Documentation
+
+
+* API documentation available at:
+
+http://localhost:8000/docs
+
+* Additional documentation includes:
+
+ System architecture
+ Machine learning model workflow
+ Deployment configuration
+## Roadmap
+
+* Mobile application
+* Deep learning prediction models
+* Advanced student analytics
+* LMS integration
+* Automated intervention system
+* Real-time academic monitoring
+##  FAQ
 
 
 
-edupredict-v2-fixed/
-│
-├── README.md
-├── docker-compose.yml
-├── Dockerfile.backend
-├── k8s.yaml
-│
-├── backend/
-│   ├── main.py
-│   ├── preprocessing.py
-│   ├── recommender.py
-│   ├── certificate_gen.py
-│   ├── requirements.txt
-│   ├── .env.example
-│   │
-│   ├── data/
-│   │   └── engineering_students.csv
-│   │
-│   └── models/
-│       └── metadata.json
-│
-├── frontend/
-│   ├── package.json
-│   ├── next.config.js
-│   ├── tailwind.config.js
-│   ├── postcss.config.js
-│   ├── tsconfig.json
-│   ├── Dockerfile
-│   ├── .env.local
-│   ├── .env.local.example
-│   │
-│   └── src/
-│       ├── app/
-│       │   ├── layout.tsx
-│       │   ├── page.tsx
-│       │   ├── globals.css
-│       │
-│       │   ├── login/
-│       │   │   └── page.tsx
-│       │
-│       │   ├── leaderboard/
-│       │   │   └── page.tsx
-│       │
-│       │   ├── student/
-│       │   │   ├── layout.tsx
-│       │   │   ├── page.tsx
-│       │   │   ├── chat/
-│       │   │   │   └── page.tsx
-│       │   │   ├── courses/
-│       │   │   │   └── page.tsx
-│       │   │   ├── points/
-│       │   │   │   └── page.tsx
-│       │   │   └── predictor/
-│       │   │       └── page.tsx
-│       │
-│       │   └── teacher/
-│       │       ├── layout.tsx
-│       │       ├── page.tsx
-│       │       ├── students/
-│       │       │   └── page.tsx
-│       │       ├── analytics/
-│       │       │   └── page.tsx
-│       │       ├── at-risk/
-│       │       │   └── page.tsx
-│       │       └── points/
-│       │           └── page.tsx
-│       │
-│       ├── components/
-│       │   └── Sidebar.tsx
-│       │
-│       ├── lib/
-│       │   └── api.ts
-│       │
-│       └── store/
-│           └── index.ts
+1. What dataset is used?
+
+  A synthetic dataset of 2000 students generated using Scikit-learn.
+
+2. Can the system scale for institutions?
+
+  Yes, it supports Docker and Kubernetes deployment.
+## Appendix
+
+* Dataset structure
+* Feature engineering methods
+* Model evaluation metrics
+## Acknowledgements
+
+ Libraries and tools used:
+
+* FastAPI
+* React
+* Tailwind CSS
+* Scikit-learn
+* MLflow
+* Anthropic Claude API
+## Authors
+
+Sushma M
+ShashiRekha Y
+SharanaBasava Malipatil
+Abhishek Rathod
+Bhavana 
+## GitHub Profile
+
+https://github.com/sushmasunitha
+
+https://github.com/sharanabasavamalipatil
+
+https://github.com/shashirekhacserymec-pixel
+
+https://github.com/Spideyabhiii
+
+https://github.com/BHAVANAMN2609
+## Feedback
+
+If you have suggestions or find issues:
+
+* Open a GitHub issue
+* Submit a pull request
+* Contact via GitHub profile
