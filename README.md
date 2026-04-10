@@ -265,11 +265,11 @@ http://localhost:8000/docs
 * Anthropic Claude API
 ## Authors
 
-Sushma M
-ShashiRekha Y
-SharanaBasava Malipatil
-Abhishek Rathod
-Bhavana 
+* Sushma M
+* ShashiRekha Y
+* SharanaBasava Malipatil
+* Abhishek Rathod
+* Bhavana 
 ## GitHub Profile
 
 https://github.com/sushmasunitha
