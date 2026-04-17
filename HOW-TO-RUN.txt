@@ -1,0 +1,73 @@
+╔═══════════════════════════════════════════════════════════╗
+║      EduPredict ENHANCED v3 — How to Run                  ║
+╚═══════════════════════════════════════════════════════════╝
+
+NEW IN THIS VERSION (v3):
+  🎤 Voice Assistant in AI Chatbot
+      • Click the 🎤 mic button to speak your question
+      • AI reads replies aloud (toggle Auto-speak ON)
+      • Click 🔊 on any message to hear it read
+      • Works in Chrome/Edge (best support)
+
+  🔔 Full Notification System
+      • Bell icon (🔔) in sidebar header with unread badge
+      • Dropdown panel — filter All / Unread, mark read, delete
+      • Dedicated Notifications page (sidebar → 🔔)
+      • Students get: course alerts, streak reminders, placement news
+      • Teachers get: at-risk alerts, analytics reports, award reminders
+      • Awarding points to a student auto-sends them a notification
+
+  Previous features still included:
+  ✅ YouTube thumbnails on course cards
+  ✅ Course progress tracking (Watchlist / In Progress / Done)
+  ✅ Star ratings, grid/list view toggle
+  ✅ Toast notification system
+  ✅ Dashboard alert banners
+  ✅ Study streak tracker
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+QUICK START
+
+  Terminal 1 (Backend):
+    cd edupredict-enhanced/backend
+    npm install
+    node server.js
+    → Runs at http://localhost:3001
+
+  Terminal 2 (Frontend):
+    cd edupredict-enhanced/frontend
+    npm install
+    npm run dev
+    → Open http://localhost:5173
+
+NOTE: Frontend works standalone without the backend.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+LOGIN CREDENTIALS
+
+  Students (password: student123)
+    priya@edu.in   — CS, Sem 6, CGPA 8.7 (excellent profile)
+    arjun@edu.in   — Data Science, Sem 4, CGPA 7.2
+    kavya@edu.in   — ECE, Sem 5, CGPA 6.5 (shows warning alerts)
+    rohan@edu.in   — Mechanical, Sem 3, CGPA 5.8 (CGPA alert)
+    sneha@edu.in   — IT, Sem 7, CGPA 9.1 (top student)
+
+  Teachers (password: teacher123)
+    rajesh@faculty.in  — Computer Science, Machine Learning
+    anita@faculty.in   — Data Science, Data Structures
+    suresh@faculty.in  — Electronics, Digital Circuits
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+TESTING VOICE:
+  1. Log in as any student → click "🤖 AI Assistant" in sidebar
+  2. Click the 🎤 red mic button → speak: "What courses should I take?"
+  3. Toggle "Auto-speak ON" to have AI read replies aloud
+  4. Click 🔊 on any message bubble to hear it
+
+TESTING NOTIFICATIONS:
+  1. Log in as Teacher → Award Points → select a student → submit
+  2. Log out → Log in as that student → bell icon shows a red badge
+  3. Click bell OR go to sidebar → 🔔 Notifications
