@@ -216,12 +216,6 @@ REDIS_URL=redis://localhost:6379
 
   http://localhost:5173
 
-## Deployment
-
-* Docker Deployment
-  docker-compose up --build
-
-
 * Cloud Platforms
 
 Supported deployment platforms:
@@ -258,49 +252,8 @@ Example response:
   "prediction": "At Risk",
   "confidence": 0.84
 }
-## API Reference
 
-* Login
-
- POST /api/auth/login
-
-* Predict Performance
-
- POST /api/predict
-
-* AI Chat Assistant
-
- POST /api/chat
-
-* Course Enrollment
-
- POST /api/courses/enroll
-
-* Course Completion
-
- POST /api/courses/complete
-
-* Fetch Certificates
-
- GET /api/certificates
-
-* Download Certificate
-
- GET /api/certificates/{id}/download
-
-* Award Student Points
-
- POST /api/students/{id}/points
-##  Running Tests
-
-* Run backend tests:
-
-  pytest
-
-* Run frontend tests:
-
-  npm test
-## 12. Lessons
+##  Lessons
 
 * Designing full-stack AI applications
 * Implementing machine learning pipelines
@@ -309,6 +262,7 @@ Example response:
 * Managing environment variables securely
 * Integrating AI APIs with web systems
 * Deploying applications with Docker 
+
 ##  Documentation
 
 
