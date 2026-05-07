@@ -139,12 +139,6 @@ Database / Storage
 * CSV Dataset Storage
 * Browser LocalStorage
 
-DevOps / Deployment
-
-* Docker
-* kubernetes
-* MLflow (experiment tracking)
-
 AI Integration
 
 * Anthropic Claude API (optional AI chat)
