@@ -135,8 +135,9 @@ Machine Learning
 
 Database / Storage
 
-* PostgreSQL
-* Redis (for caching)
+* JSON Database
+* CSV Dataset Storage
+* Browser LocalStorage
 
 DevOps / Deployment
 
