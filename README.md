@@ -1,25 +1,115 @@
+# EduPredict – Student Performance Prediction & Course Recommendation System
 
-# Student Performance Prediction
+EduPredict is an AI-powered student intelligence platform that helps predict student performance, recommend suitable courses, and support students with smart learning features.
 
-EduPredict is an AI-powered student performance prediction platform that helps educational institutions identify at-risk students early and provide personalized recommendations to improve academic outcomes.
+---
 
-The system uses machine learning models to analyze student data such as attendance, grades, study hours, and participation to predict performance and generate insights for both students and teachers.
+## Project Overview
 
-The platform includes analytics dashboards, course recommendations, certificate generation, and an AI assistant for academic guidance.
+This project was developed in different stages, from a basic prediction system to an advanced AI-based education platform.
 
+Initially, the project focused on predicting student performance using academic data such as attendance, marks, study hours, and previous results.
 
-## Features
- 
- * Student Performance Prediction
- * AI-powered academic guidance assistant
- * Course recommendation system
- * Early risk detection for students
- * Points and achievement system
- * Automatic certificate generation
- * Student analytics dashboard
- * Teacher dashboard to monitor student progress
- * Real-time notifications
- * Voice-enabled AI chat assistant
+Later, it was enhanced with a course recommendation system to suggest useful courses based on student skills, interests, and performance.
+
+In the current advanced version, the platform includes AI assistant features, course summaries, notifications, dashboards, points, certificates, and teacher/student portals.
+
+---
+
+##  Project Evolution
+
+###  Basic Version – Student Performance Prediction
+
+In the basic version, the system predicts student performance using machine learning.
+
+#### Features
+- Student performance prediction
+- Attendance and marks analysis
+- Risk identification
+- Basic student dashboard
+- Teacher monitoring support
+
+#### Machine Learning Models
+- Logistic Regression
+- Decision Tree
+- Random Forest
+- Gradient Boosting
+
+---
+
+### Enhanced Version – Course Recommendation System
+
+In this version, course recommendation features were added.
+
+#### Features
+- Personalized course recommendations
+- Skill-based learning suggestions
+- Course library
+- Watchlist option
+- In-progress and completed course tracking
+- YouTube course integration
+
+#### Recommendation Based On
+- Student branch
+- Skill level
+- Course difficulty
+- Career path
+- Student performance
+
+---
+
+### Advanced Version – AI-Powered Smart Education Platform
+
+The current version includes advanced features to make the system more interactive and intelligent.
+
+#### Advanced Features
+- AI course summary
+- AI academic assistant
+- Real-time notifications
+- Student dashboard
+- Teacher dashboard
+- Course progress tracking
+- Points and achievement system
+- Leaderboard
+- Assignment section
+- Certificate generation
+- Login system
+- Performance analytics
+- Student risk prediction
+
+---
+
+## Machine Learning Module
+
+The ML model is trained using student academic data.
+
+### Dataset Features
+- Attendance
+- Study hours
+- Previous scores
+- Assignment marks
+- Participation
+- Internet access
+- Sleep hours
+- Tutoring sessions
+- Exam score
+
+### Output
+The system predicts student performance and helps identify students who may need academic support.
+
+---
+
+## 📊 Trained Model Details
+
+The project includes trained ML model files.
+
+### Model Files
+```txt
+backend/ml/student_score_regressor.joblib
+backend/ml/student_performance_classifier.joblib
+backend/ml/model_metrics.json
+backend/ml/train_model.py
+backend/ml/predict_with_model.py
 ## Tech 
 
 Frontend
@@ -76,6 +166,13 @@ AI Integration
 
   cd ../frontend
   npm install
+
+* Run Machine Learning Model
+
+cd backend
+pip install -r requirements-ml.txt
+python ml/train_model.py
+
 ## Environment Variables
 ---
 
