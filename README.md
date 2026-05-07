@@ -99,7 +99,7 @@ The system predicts student performance and helps identify students who may need
 
 ---
 
-## 📊 Trained Model Details
+##  Trained Model Details
 
 The project includes trained ML model files.
 
@@ -151,7 +151,7 @@ AI Integration
 
 * Clone the repository:
 
-  git clone https://github.com/yourusername/edupredict.git
+  git clone https://github.com/https://github.com/sharanabasavamalipatil/student-performance-/edupredict.git
 
 * Navigate to the project folder:
 
