@@ -1,0 +1,23 @@
+{
+  "name": "edupredict-backend",
+  "version": "5.0.0",
+  "description": "EduPredict v5.0 \u2014 MySQL, bcrypt auth, trained ML model",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "train": "node train-model.js",
+    "train:watch": "nodemon train-model.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.4.2",
+    "express": "^4.18.2",
+    "mysql2": "^3.9.0",
+    "nodemailer": "^8.0.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.0"
+  }
+}
